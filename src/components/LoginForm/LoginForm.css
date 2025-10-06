@@ -1,0 +1,33 @@
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px 10px 15px;
+
+    border-radius: 15px;
+    background: rgb(214, 230, 237);
+}
+
+.login-form input{
+    border: transparent;
+    padding: 5px;
+    margin: 2px;
+
+    width: 20vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+}
+
+button{
+    margin: 20px 0 15px 0;
+    width: 28vw;
+
+    background: radial-gradient(circle,rgba(63, 179, 251, 1) 44%, rgba(119, 70, 252, 1) 100%);
+}
+
+button:hover {
+  /* border-color: #646cff; */
+  color: white;
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}

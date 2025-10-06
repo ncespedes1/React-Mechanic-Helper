@@ -1,0 +1,25 @@
+/* nav{
+    background-color: aqua;
+} */
+
+/* @font-face {
+    font-family: 'MechanicTitleFont';
+    src: url(../../assets/fonts/Braeside\ Lumberboy.otf) format('otf');
+} */
+
+/* #title{
+    font-family: 'MechanicTitleFont;
+
+} */
+
+ul{
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+a{
+    text-decoration: none
+}
