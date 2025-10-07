@@ -3,10 +3,10 @@
 header{
     padding: 0;
     margin: 0;
-    background: var(--primary-bg-dark);
+    background: var(--primary-bg);
 
     margin-bottom: 25px;
-    filter: drop-shadow(0 0 2em #67b1edaa);
+    filter: drop-shadow(0 0 2em var(--title-color));
 }
 
 nav{
@@ -17,7 +17,7 @@ nav{
 #title{
     font-family: 'Black Ops One';
     font-weight: 400;
-    color: var(--title-light);
+    color: var(--title-color);
 
     padding-top: 40px;
     padding-bottom: 20px;
@@ -35,10 +35,17 @@ ul{
 
 nav a{
     text-decoration: none;
-    color: var(--title-light);
+    color: var(--title-color);
 }
 
 
 nav a:hover{
-    filter: drop-shadow(0 .1em 0 #61dafbaa);
+    color: var(--highlight-color);
+    filter: drop-shadow(0 .1em 0 var(--highlight-color));
+}
+
+.navbar-line{
+    filter: drop-shadow(0 0 2em #67b1edaa);
+    height: 1px;
+    background: var(--highlight-color);
 }

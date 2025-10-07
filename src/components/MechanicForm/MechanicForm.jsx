@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import './MechanicForm.css'
 import { CircularProgress } from '@mui/material'
+import { useTheme } from '../../contexts/ThemeContext';
 
 const MechanicForm = ({ submitFunction }) => {
 
@@ -17,6 +18,7 @@ const MechanicForm = ({ submitFunction }) => {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(false)
     const [success, setSuccess] = useState(false)
+    const { darkMode } = useTheme(); 
 
     const handleChange = (event) => {
         const { name, value } = event.target
@@ -58,7 +60,7 @@ const MechanicForm = ({ submitFunction }) => {
 
 
   return (
-    <div>
+    <div className={darkMode ? 'container mainDark' : 'container mainLight'}>
 
       <form onSubmit={(e)=> {handleSubmit(e)}} id='mechForm'>
         <div>
@@ -91,7 +93,7 @@ const MechanicForm = ({ submitFunction }) => {
             <input type="address" name='address' placeholder='address' onChange={(e)=>handleChange(e)} value={formData.address} required/>
         </div>
 
-        <button type='submit'>Submit</button>
+        <button type='submit' style={{backgroundColor: darkMode ? 'rgb(107, 207, 260, 0.2)': '#336388ff'}}>Submit</button>
 
         {loading && 
             <div>

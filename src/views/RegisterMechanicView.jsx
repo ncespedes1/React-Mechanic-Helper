@@ -2,8 +2,12 @@ import React from 'react'
 import MechanicForm from '../components/MechanicForm/MechanicForm'
 import { useAuth } from '../contexts/AuthContext'
 
+// import { useTheme } from "./contexts/ThemeContext"
+
+
 const RegisterMechanicView = () => {
   const { registerMechanic } = useAuth();
+  // const { darkMode } = useTheme();
 
   return (
     <div>

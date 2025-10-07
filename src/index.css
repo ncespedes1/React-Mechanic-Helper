@@ -4,27 +4,39 @@
 
 }
 
-body{
-  background-color: var(--secondary-bg-dark);
-  color: var(--text-light);
+ /* background-color: rgb(37, 37, 37) !important;
+  color: rgb(230, 230, 230); */
+
+ /* background-color: rgb(235, 235, 235) !important;
+  color: rgb(47, 47, 47) !important; */
+
+
+/* [data-theme='mainDark'] {
+   --primary-color-dark: #3498db;
+  --secondary-color-dark: #4e8b9e;
+  --accent-color-dark: #3cc5e7;
+  --primary-bg: #173244;
+  --secondary-bg: #0a2232;
+  --title-light: #ffffff;
+  --text-light: #ffffff;
 }
 
-/* .mainDark {
-  background-color: rgb(37, 37, 37) !important;
-  color: rgb(230, 230, 230);
-}
-
-.mainLight {
-  background-color: rgb(235, 235, 235) !important;
-  color: rgb(47, 47, 47) !important;
+[data-theme='mainLight'] {
+   --primary-color-light: #3498db;
+  --secondary-color-light: #6cd8f3;
+  --accent-color-light: #3c5ee7;
+  --primary-bg: #ccd9e2;
+  --secondary-bg: #ccd9e2;
+  --title-dark: #333333;
+  --text-dark: #333333;
 } */
 
-:root {
+/* :root {
   --primary-color-dark: #3498db;
   --secondary-color-dark: #4e8b9e;
   --accent-color-dark: #3cc5e7;
-  --primary-bg-dark: #173244;
-  --secondary-bg-dark: #0a2232;
+  --primary-bg: #173244;
+  --secondary-bg: #0a2232;
   --title-light: #ffffff;
   --text-light: #ffffff;
 
@@ -35,4 +47,42 @@ body{
   --accent-color-light: #3c5ee7;
   --title-dark: #333333;
   --text-dark: #333333;
+} */
+
+.mainDark{
+  --primary-color: #2a5572;
+  --secondary-color: #5e8eaa;
+
+  --highlight-color: #96d7e8;
+  --accent-color: #e885dc;
+
+  --primary-bg: #173244;
+  --secondary-bg: #0a2232;
+
+  --title-color: #8adffe;
+  --text-color: #ffffff;
+  --neutral-glow: #67bcedaa;
+
+  --input-bg: rgb(37, 64, 86);
+}
+
+.mainLight{
+  --primary-color: #1d577d;
+  --secondary-color: #7abce4;
+
+  --highlight-color: #ced5db;
+  --accent-color: #c3288d;
+
+  --primary-bg: #aad1ec;
+  --secondary-bg: #ccd9e2;
+
+  --title-color: #204972;
+  --text-color: #333333;
+  --neutral-glow: #a5d4fbaa;
+
+  --input-bg: rgb(196, 222, 243);
+}
+
+#appDiv{
+  min-height: 100vh;
 }

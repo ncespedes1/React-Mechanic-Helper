@@ -9,7 +9,7 @@ export const useTheme = () => {
     return context;
 }
 
-export const ThemeProvider = ({children}) => {
+export const ThemeProvider = ({ children }) => {
 
     const [darkMode, setDarkMode] = useState(()=>{
             const saved = localStorage.getItem('theme')

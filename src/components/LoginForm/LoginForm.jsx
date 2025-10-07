@@ -4,6 +4,8 @@ import { useNavigate, Link } from 'react-router-dom'
 import { CircularProgress } from '@mui/material'
 import './LoginForm.css'
 
+import { useTheme } from '../../contexts/ThemeContext';
+
 const LoginForm = () => {
 
     const [email, setEmail] =useState('')
@@ -11,7 +13,9 @@ const LoginForm = () => {
     const [error, setError] = useState(false)
     const [loading, setLoading] = useState(false)
     const { login } = useAuth();
+    const { darkMode } = useTheme(); 
     const navigate = useNavigate();
+    
 
     const handleSubmit = async (event) => {
         // console.log(`PASSING ${email} and {password} to login`)
@@ -38,8 +42,8 @@ const LoginForm = () => {
     
 
   return (
-    <div>
-        <form  className='login-form' onSubmit={(e)=>handleSubmit(e)}>
+    <div className={darkMode ? 'container mainDark' : 'container mainLight'}>
+        <form className='login-form' onSubmit={(e)=>handleSubmit(e)}>
 
             <input 
             value={email}
@@ -59,12 +63,12 @@ const LoginForm = () => {
             {loading && 
             <div>
                 <CircularProgress className='loading' color=''/>
-                <p>Loading... One moment please!</p>
+                <p className='loading-txt'>Loading... One moment please!</p>
             </div>
             }
             {errorMessage()}
             {/* <CircularProgress className='loading' color=''/>
-            <p>Loading... One moment please!</p> */}
+            <p className='loading-txt'>Loading... One moment please!</p> */}
         </form>
 
         <p className='sign-up'>

@@ -1,3 +1,11 @@
+.container{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    align-content: center; 
+    height: 60vh;
+}
+
 .login-form{
     display: flex;
     flex-direction: column;
@@ -9,8 +17,11 @@
     padding: 30px 10px 15px;
 
     border-radius: 15px;
-    background: rgb(75, 117, 135);
-    border: 1px solid lightblue;
+    background: var(--primary-color);
+    border: 1px solid var(--title-color);
+
+    /* filter: drop-shadow(0 0 2em var(--neutral-glow)); */
+    
 }
 
 .login-form input{
@@ -21,41 +32,43 @@
     width: 20vw;
     font-family: 'Courier New', Courier, monospace;
     /* font-variant: small-caps; */
+
+    /* background-color: rgb(246, 246, 246, 0.8); */
 }
 
 .login-form button{
     margin: 20px 0 15px 0;
     width: 28vw;
     
-    /* background: var(--primary-bg-dark); */
-    /* color: var(--accent-color-dark); */
-    /* color: var(--primary-bg-dark); */
-    color: var(--text-light);
+    color: var(--title-color);
     /* border: 1px solid rgb(46, 146, 179); */
     border: transparent;
     /* border: 1px solid lightblue; */
-    background: rgba(139, 170, 181, 0.8);
+    background: var(--secondary-color);
 }
 
 .login-form button:hover {
-  color: var(--accent-color-dark);
+  color: var(--highlight-color);
   
-  background: rgba(13, 79, 100, 0.8);
-  border: 2px solid var(--accent-color-dark);
+  background: var(--neutral-glow);
+  border: 2px solid var(--highlight-color);
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 .sign-up{
     margin: 10px;
+
+    color: var(--text-color);
 }
 
 .sign-up a{
-    color: rgb(211, 110, 218);
+    color: var(--accent-color);
+    font-weight: 600;
 }
 
 .sign-up a:hover{
-    color: var(--accent-color-dark);
-    filter: drop-shadow(0 0 2em #83e0faaa);
+    color: var(--title-color);
+    filter: drop-shadow(0 0 2em var(--title-color));
 }
 
 /* color: 'var(--accent-color-dark)' */
@@ -63,4 +76,8 @@
 .loading{
     color: white;
     margin: 10px;
+}
+
+.loading-txt{
+    color: var(--text-color);
 }

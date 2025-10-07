@@ -2,10 +2,12 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../contexts/AuthContext'
 import './ProfileCard.css'
+import { useTheme } from '../../contexts/ThemeContext';
 
 const ProfileCard = () => {
   const { mechanic,  deleteMechanic } = useAuth();
   const navigate = useNavigate();
+  const { darkMode } = useTheme(); 
 
   const handleDelete = () => {
      deleteMechanic();
@@ -13,11 +15,11 @@ const ProfileCard = () => {
   }
 
   return (
-    <div>
+    <div className={darkMode ? 'container mainDark' : 'container mainLight'}>
       <div className='profile-card'>
         {/* <h1>Profile Page</h1> */}
         <h2 className='profile-name'>{mechanic?.firstname} {mechanic?.lastname}</h2>
-        <hr />
+        <div />
         <div style={{display: 'flex', flexDirection: 'column'}}>
           <div className='profile-list'>
             <p>EMAIL: {mechanic?.email}</p>

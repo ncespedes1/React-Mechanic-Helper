@@ -1,15 +1,16 @@
 import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import { useTheme } from '../../contexts/ThemeContext';
 import './NavBar.css'
 
-// import ThemeSwitch from '../ThemeSwitch';
+import ThemeSwitch from '../ThemeSwitch';
 
 const NavBar = () => {
 
     const navigate = useNavigate();
     const { logout, isAuthenticated } = useAuth();
-    // const { darkMode, toggleTheme } = useTheme(); 
+    const { darkMode, toggleTheme } = useTheme(); 
 
     const handleLogout = () => {
       logout();
@@ -17,8 +18,7 @@ const NavBar = () => {
     }
 
   return (
-    // <header className={darkMode ? 'mainDark' : 'mainLight'}>
-    <header>
+    <header className={darkMode ? 'mainDark' : 'mainLight'}>
       
       <nav>
         <h1 id='title'>My Mechanic Helper</h1>  
@@ -36,11 +36,11 @@ const NavBar = () => {
             
             </>
             }
-            {/* <ThemeSwitch onClick={toggleTheme}/> */}
+            <ThemeSwitch onClick={toggleTheme}/>
             
         </ul>
       </nav>
-      <hr className='navbar-line' />
+      <div className='navbar-line' />
     </header>
   )
 }
