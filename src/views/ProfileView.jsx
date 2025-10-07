@@ -2,6 +2,8 @@ import React from 'react'
 import ProfileCard from '../components/ProfileCard/ProfileCard'
 
 const ProfileView = () => {
+  
+
   return (
     <div>
       <ProfileCard/>

@@ -1,25 +1,44 @@
-/* nav{
-    background-color: aqua;
-} */
 
-/* @font-face {
-    font-family: 'MechanicTitleFont';
-    src: url(../../assets/fonts/Braeside\ Lumberboy.otf) format('otf');
-} */
 
-/* #title{
-    font-family: 'MechanicTitleFont;
+header{
+    padding: 0;
+    margin: 0;
+    background: var(--primary-bg-dark);
 
-} */
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 2em #67b1edaa);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+#title{
+    font-family: 'Black Ops One';
+    font-weight: 400;
+    color: var(--title-light);
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
 
 ul{
-    padding: 5px;
+    padding-bottom: 25px;
 
     display: flex;
     justify-content: space-evenly;
+    align-items: end;
+    gap: 40px;
     
 }
 
-a{
-    text-decoration: none
+nav a{
+    text-decoration: none;
+    color: var(--title-light);
+}
+
+
+nav a:hover{
+    filter: drop-shadow(0 .1em 0 #61dafbaa);
 }

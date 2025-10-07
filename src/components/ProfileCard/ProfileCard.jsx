@@ -19,9 +19,11 @@ const ProfileCard = () => {
         <h2 className='profile-name'>{mechanic?.firstname} {mechanic?.lastname}</h2>
         <hr />
         <div style={{display: 'flex', flexDirection: 'column'}}>
-          <p>EMAIL: {mechanic?.email}</p>
-          <p>SALARY: {mechanic?.salary}</p>
-          <p>ADDRESS: {mechanic?.address}</p>
+          <div className='profile-list'>
+            <p>EMAIL: {mechanic?.email}</p>
+            <p>SALARY: {mechanic?.salary}</p>
+            <p>ADDRESS: {mechanic?.address}</p>
+          </div>
           <div className='profile-buttons'>
             <button className='update-button' onClick={()=>navigate('/profile/update')}>Update</button>
             <button className='delete-button' onClick={()=>handleDelete()}>Delete</button>

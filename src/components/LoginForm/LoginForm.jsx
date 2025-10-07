@@ -58,15 +58,16 @@ const LoginForm = () => {
             <button type='submit'>Submit</button>
             {loading && 
             <div>
-                <CircularProgress />
-                <p>Loading. One moment please!</p>
+                <CircularProgress className='loading' color=''/>
+                <p>Loading... One moment please!</p>
             </div>
             }
             {errorMessage()}
-
+            {/* <CircularProgress className='loading' color=''/>
+            <p>Loading... One moment please!</p> */}
         </form>
 
-        <p>
+        <p className='sign-up'>
             Don't have an account? <Link to='/register'>Sign-up here</Link>
         </p>
 

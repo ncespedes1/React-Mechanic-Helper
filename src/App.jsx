@@ -8,12 +8,14 @@ import UpdateProfileView from "./views/UpdateProfileView";
 import RegisterMechanicView from './views/RegisterMechanicView';
 import './App.css'
 
+// import { useTheme } from "./contexts/ThemeContext"
+
 function App() {
-  const [count, setCount] = useState(0)
+  // const { darkMode } = useTheme();
 
   return (
-    <div>
-      
+    // <div style={{height: '100vh', backgroundColor: isDarkMode ? '#1b1b1bff' : 'white'}}>
+    <div> 
       <BrowserRouter>
         <NavBar/>
         <Routes>

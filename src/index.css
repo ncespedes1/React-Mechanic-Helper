@@ -1,59 +1,38 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-}
-
-a {
-  font-weight: 500;
-  color: #4d8eff;
-  /* text-decoration: inherit; */
-}
-a:hover {
-  color: #060a91;
-}
-
-body {
+*{
   margin: 0;
-  /* display: flex; */
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body{
+  background-color: var(--secondary-bg-dark);
+  color: var(--text-light);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+/* .mainDark {
+  background-color: rgb(37, 37, 37) !important;
+  color: rgb(230, 230, 230);
 }
 
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.mainLight {
+  background-color: rgb(235, 235, 235) !important;
+  color: rgb(47, 47, 47) !important;
 } */
+
+:root {
+  --primary-color-dark: #3498db;
+  --secondary-color-dark: #4e8b9e;
+  --accent-color-dark: #3cc5e7;
+  --primary-bg-dark: #173244;
+  --secondary-bg-dark: #0a2232;
+  --title-light: #ffffff;
+  --text-light: #ffffff;
+
+
+
+  --primary-color-light: #3498db;
+  --secondary-color-light: #6cd8f3;
+  --accent-color-light: #3c5ee7;
+  --title-dark: #333333;
+  --text-dark: #333333;
+}

@@ -1,11 +1,46 @@
 .profile-card{
     border-radius: 15px;
+    /* border: 1px solid rgb(160, 203, 217, 0.5); */
     /* background: radial-gradient(circle,rgb(254, 254, 254) 44%, rgb(193, 193, 193) 100%);; */
-    background: rgb(238, 240, 241);
+    background: var(--primary-bg-dark);
+    place-self: center;
+
+    
+    width: 35vw;
+
+    margin: 15px;
 }
 
+/* body {
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
 .profile-name{
+    padding: 30px 0 10px;
+    text-align: center;
+
+    background: var(--secondary-color-dark);
+    border-radius: 15px 15px 0 0 ;
+}
+
+.profile-list{
     padding-top: 15px;
+    
+    /* background: rgb(214, 214, 214); */
+    width: 28vw;
+    align-self: center;
+}
+
+.profile-card p{
+    margin: 5px;
+    width: 28vw;
+
+    text-align: start;
+    align-self: center;
+
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .profile-card button{
@@ -19,26 +54,32 @@
     justify-content: center;
     align-items: center;
 
-    margin: 5px 0 15px 0;
+    margin: 15px 0 15px 0;
 }
 
 .update-button{
-    background: radial-gradient(circle,rgba(63, 179, 251, 1) 44%, rgba(119, 70, 252, 1) 100%);;
-    /* border: 1px solid black; */
+    /* background: radial-gradient(circle,rgba(63, 179, 251, 1) 44%, rgba(119, 70, 252, 1) 100%);; */
+    border: 1px solid lightblue;
+    color: lightblue;
+    background: var(--primary-bg-dark);
 }
 
 .delete-button{
     /* background: radial-gradient(circle,rgba(251, 107, 63, 1) 43%, rgba(252, 70, 73, 1) 100%);; */
-    background: radial-gradient(circle,rgba(252, 70, 73, 1) 43%, rgb(252, 70, 167) 100%);;
+    /* background: radial-gradient(circle,rgba(252, 70, 73, 1) 43%, rgb(252, 70, 167) 100%);; */
     /* color: white; */
+
+    border: 1px solid rgb(230, 97, 97);
+    color: rgb(200, 80, 80);
+    background: var(--primary-bg-dark);
 }
 
 .update-button:hover {
-  /* border-color: #646cff; */
-  color: blue;
-  background: radial-gradient(circle,rgb(255, 255, 255) 54%, rgba(119, 70, 252, 1) 100%);;
   
-  /* color: white; */
+  color: var(--accent-color-dark);
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--accent-color-dark);
+  
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -46,7 +87,10 @@
   /* border-color: #646cff; */
   
   color: red;
-  background: radial-gradient(circle,rgb(255, 255, 255) 54%, rgb(252, 70, 109) 100%);;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid red;
+
+  /* border-color: radial-gradient(circle,rgb(255, 255, 255) 54%, rgb(252, 70, 109) 100%);; */
   
   /* color: white; */
   filter: drop-shadow(0 0 2em #fb6197aa);
